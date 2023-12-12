@@ -4,10 +4,12 @@ pandas
 numpy
 matplotlib
 seaborn
-
+gunicorn
 
 #pip install -r requirements.txt
 
 #git add .
 #git commit -m "message"
 #git push origin main
+
+#procfile -> on starting the application what commands need to be run?

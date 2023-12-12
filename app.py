@@ -8,7 +8,7 @@ reg_model = pickle.load(open('regression.pkl', 'rb'))
 scaler = pickle.load(open('scaling.pkl', 'rb'))
 @app.route('/')
 def home():
-    return "Hello"
+    return render_template("home.html")
 @app.route('/predict_api', methods = ['POST'])
 def predict_api():
     data = request.json['data']
